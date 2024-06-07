@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.hj.mapper.MainMapper">
+
+  
+  
+  	
+
+	<select id="countBoard" resultType="int">
+		SELECT COUNT(*) FROM fl
+	</select>
+
+
+	<select id="imgList" parameterType="org.hj.model.MainVO"
+		resultType="org.hj.model.MainVO">
+		SELECT fileName, filepath, tags ,no
+		FROM fl
+		WHERE no BETWEEN
+		#{start} AND #{end}
+	</select>
+   
+    
+
+	<!-- 이미지 상세 페이지 -->
+	<select id="showImgDetail" resultType="org.hj.model.MainVO">
+		SELECT * FROM fl
+		where
+		no=#{no}
+	</select>
+
+
+	<!-- 이미지 상세 페이지에서 노출되는 나머지 이미지들
+		현재 조회하고있는 이미지보다 높은 no의 게시글 4개 출력
+	 -->
+	<select id="extraImgs" resultType="org.hj.model.MainVO">
+		SELECT * FROM fl
+		WHERE no > #{no}
+		ORDER BY no ASC
+		LIMIT 4
+	</select>
+
+</mapper>

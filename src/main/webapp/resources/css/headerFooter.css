@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+a {
+	font-size: 13px;
+}
+
+#header {
+	height: 100px;
+	z-index: 1;
+	position: fixed;
+	padding: 10px 100px 10px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background: rgb(244, 255, 255);
+	background: linear-gradient(90deg, rgba(244, 255, 255, 1) 0%,
+		rgba(225, 242, 255, 1) 49%, rgba(223, 210, 255, 1) 100%);
+}
+
+#header>a>p {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#header>.search_area {
+	display: flex;
+	gap: 30px;
+}
+
+.search_space {
+	font-size: 20px;
+}
+#searchA {
+	display: flex;
+	gap: 30px;
+}
+
+#searchB {
+	background: none;
+	border: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #996efa;
+	cursor: pointer;
+}
+
+#header>.search_area>img {
+	width: 50px;
+	height: 50px;
+	/* position: relative; */
+	right: 0;
+}
+
+#header>.search_area>form>.search_space {
+	width: 800px;
+	padding: 20px;
+}
+
+#header>.search_area>form>.search_space, .category {
+	border-radius: 30px;
+	border: 1px solid rgb(238, 238, 238);
+	border-style: none;
+}
+
+#header>.search_area>.category:focus {
+	background-color: rgb(240, 239, 239);
+}
+
+#header>.search_area>.category {
+	text-align: center;
+	position: relative;
+	right: 85px;
+	bottom: -10px;
+	width: 80px;
+	height: 35px;
+	transition: background-color 0.3s;
+	font-weight: bold;
+}
+
+input[type="search"] {
+	outline: none;
+}
+
+#header>.login_area {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+.login_area>.login, .join, .logout, .mypage {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	width: 100px;
+	height: 30px;
+	background-color: #ffffff;
+	border: none;
+	color: #363636;
+	cursor: pointer;
+	border-radius: 20px;
+	padding: 10px 24px;
+	transition: background-color 0.3s;
+	font-weight: bold;
+}
+
+#header>.login_area>.login:hover, .join:hover, .logout:hover, .mypage:hover
+	{
+	background-color: #1976D2;
+	color: white;
+}
+
+#header>.login_area>.upload:hover {
+	background-color: #9b3de7;
+}
+
+#header>.login_area>.upload:hover a {
+	color: rgb(255, 255, 255);
+}
+
+#header>.login_area>.upload {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 30px;
+	background-color: #ffffff;
+	border: none;
+	color: #363636;
+	cursor: pointer;
+	border-radius: 20px;
+	padding: 10px 24px;
+	font-weight: bold;
+	transition: background-color 0.3s;
+}
+
+#footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: larger;
+	background: rgb(244, 255, 255);
+	background: linear-gradient(90deg, rgba(244, 255, 255, 1) 0%,
+		rgba(225, 242, 255, 1) 49%, rgba(223, 210, 255, 1) 100%);
+	color: #763df6;
+	font-weight: bold;
+	z-index: 1;
+	padding: 20px 0px 20px 0px;
+	background: linear-gradient(90deg, rgba(244, 255, 255, 1) 0%,
+		rgba(225, 242, 255, 1) 49%, rgba(223, 210, 255, 1) 100%);
+}

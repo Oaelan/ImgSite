@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 950px;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+#warp {
+	display: grid;
+	width: 100%;
+	height: auto;
+	grid-template-rows: 900px 50px;
+}
+
+/* --------------------------------main_contents--------------------------------*/
+#main_contents {
+	position: relative;
+	top: 100px;
+}
+
+#main_contents {
+	position: relative;
+	display: grid;
+	grid-template-columns: 5fr 2fr;
+}
+
+#main_contents>#edit_size_area {
+	display: grid;
+	grid-template-rows: 1fr;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+}
+
+#main_contents>#edit_size_area>#output>.output_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 800px;
+	height: 800px;
+	padding: 20px;
+}
+
+#main_contents>#edit_size_area>#output>.output_box>.output_image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+/* --------------------------------right_side--------------------------------*/
+#right_side {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	border-left: 2px solid rgb(211, 211, 211);
+}
+
+.category_select {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	height: 600px;
+	background-color: rgb(253, 253, 253);
+	border: 1px solid black;
+	padding: 20px;
+	gap: 70px;
+	
+}
+
+.cate_text {
+	font-size: 18px;
+	font-weight: bold;
+	color: #006fee;
+}
+
+.category_select>p {
+	font-weight: bold;
+}
+
+.category_list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px;
+	list-style: none;
+}
+
+.img_tag>input[type="text"] {
+	padding: 10px;
+}
+
+.category_select>.img_tag {
+	align-items: center;
+	display: flex;
+	gap: 10px;
+}
+
+#img_upload {
+	display: grid;
+	gap: 20px;
+}
+
+#img_size {
+	opacity: 0%;
+}
+
+/* 숨겨진 기본 라디오 버튼 */
+input[type="radio"] {
+	display: none;
+}
+
+/* 라디오 버튼을 대체할 버튼 스타일 */
+.radio-button {
+	display: inline-block;
+	width: 80px;
+	border: 2px solid #ccc;
+	background-color: #fff;
+	cursor: pointer;
+	text-align: center;
+	padding: 5px 5px 5px 5px;
+}
+
+/* 선택된 라디오 버튼의 버튼 스타일 */
+input[type="radio"]:checked+label {
+	background-color: rgb(23, 149, 207);
+	color: #fff;
+	border: 1px solid black;
+	font-weight: bold;
+}
+
+/*등록하기 버튼*/
+.upload {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+#upload_b {
+	height: 50px;
+	padding: 0px 20px 0px 20px;
+	background-color: #9f75ff;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	border-style: none;
+	text-align: center;
+	transition: background-color 0.3s;
+}
+
+#upload_b:hover {
+	background-color: #ffffff;
+	color: rgb(23, 149, 207);
+}
+#upload_A{
+	display: flex;
+	flex-direction: row;
+	gap:50px;
+}
+.img_upload {
+	background-color: #9f75ff;
+	padding: 10px 30px 10px 30px;
+	color: white;
+	transition: background-color 0.3s;
+}
+
+.img_upload:hover {
+	background-color: #ffffff;
+	color: rgb(23, 149, 207);
+}
+
+.upload_butt_t {
+	vertical-align: middle;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+/**********************footer**************************/
+#footer {
+	position: relative;
+	top: 100px;
+}
