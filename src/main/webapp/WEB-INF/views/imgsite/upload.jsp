@@ -8,7 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>업로드 페이지</title>
+<title>업로드</title>
 <link rel="stylesheet" href="../resources/css/upload.css">
 <link rel="stylesheet" href="../resources/css/headerFooter.css">
 </head>
