@@ -7,7 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+<title>이미지 디테일</title>
 
 <link rel="stylesheet" href="../resources/css/imgDetail.css?ver=1210">
 <link rel="stylesheet" href="../resources/css/headerFooter.css">
