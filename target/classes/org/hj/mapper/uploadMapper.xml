@@ -6,7 +6,7 @@
   
 <mapper namespace="org.hj.mapper.uploadMapper">
 	<insert id="uploadImage" parameterType="org.hj.model.MainVO">
-		INSERT INTO fl (fileName, filepath, img_kind, writer, tag, liked) 
+		INSERT INTO fl (fileName, filepath, img_kind, writer, tags, liked) 
 			VALUES (#{filename}, #{filePath}, #{img_kind}, #{writer}, #{tags}, 0);
 	
 	</insert>
